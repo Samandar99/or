@@ -6,9 +6,9 @@ const App = () => {
     const redirectUserToAppStore = () => {
       if (isMobile) {
         if (isIOS) {
-          window.location.href = "https://apps.apple.com/app/idyour-app-id";
+          window.location.href = "https://play.google.com/store/apps/details?id=com.rtholdings.rttaxi";
         } else {
-          window.location.href = "market://details?id=your.app.package";
+          window.location.href = "https://apps.apple.com/uz/app/aka-taxi/id6446449252";
         }
       }
     };
