@@ -12,9 +12,15 @@ const App = () => {
     }
   };
 
+  // Определение URL-адреса магазина приложений сразу при загрузке компонента
+  const appStoreLink = getAppStoreLink();
+
   return (
     <div>
-      <a href={getAppStoreLink()}>{isMobile ? "Download App" : "Download Desktop App"}</a>
+      {/* Используем уже определенный URL-адрес магазина приложений */}
+      <a href={appStoreLink}>
+        {isMobile ? "Download App" : "Download Desktop App"}
+      </a>
     </div>
   );
 };
